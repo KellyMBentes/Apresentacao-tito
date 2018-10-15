@@ -1,0 +1,109 @@
+\documentclass[aspectratio=169]{beamer}	 	
+
+\usetheme{Pittsburgh}
+\usecolortheme{default}
+\usefonttheme[onlymath]{serif}			% para fontes matemáticas
+% Enconte mais temas e cores em http://www.hartwork.org/beamer-theme-matrix/ 
+% Veja também http://deic.uab.es/~iblanes/beamer_gallery/index.html
+\usepackage{media9}
+% Customizações de Cores: fg significa cor do texto e bg é cor do fundo
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{alerted text}{fg=red}
+\setbeamercolor{author}{fg=blue}
+\setbeamercolor{institute}{fg=blue}
+\setbeamercolor{date}{fg=green}
+\setbeamercolor{frametitle}{fg=red}
+\setbeamercolor{framesubtitle}{fg=brown}
+\setbeamercolor{block title}{bg=blue, fg=white}		%Cor do título
+\setbeamercolor{block body}{bg=gray, fg=darkgray}	%Cor do texto (bg= fundo; fg=texto)
+
+% ---
+% PACOTES
+% ---
+\usepackage[alf]{abntex2cite}		% Citações padrão ABNT
+\usepackage[brazil]{babel}		% Idioma do documento
+\usepackage{color}			% Controle das cores
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{txfonts}			% Fontes virtuais
+% ---
+
+% --- Informações do documento ---
+\title{Acessibilidade e Inclusão}
+\author{Lucas Tito}
+\institute{Grupo de Apoio a Pesquisas Em Acessibilidade e Inclusão - GAPAI}
+\date{\today, v-1.9.6}
+% ---
+
+% ----------------- INÍCIO DO DOCUMENTO --------------------------------------
+\begin{document}
+
+% ----------------- NOVO SLIDE --------------------------------
+\begin{frame}
+
+\titlepage
+
+\end{frame}
+
+% ----------------- NOVO SLIDE --------------------------------
+\begin{frame}{Sumário}
+\tableofcontents
+\end{frame}
+
+% ----------------- NOVO SLIDE --------------------------------
+
+\begin{frame}{Qual nome usar?}
+
+Portador de necessidades especiais
+pessoa com deficiência x (x = visual, motora, física, ...)
+Cego, cadeirante, surdo, ...
+
+\end{frame}
+
+\begin{frame}{Acessibilidade}
+Algo é dito acessível, quando toda e qualquer pessoa de forma indistinta possui acesso.
+
+Exemplo:
+um livro é dito acessível quando pode ser lido em braille ou se digital, os leitores de tela conseguem reproduzir o conteudo por meio do sintetizador sem quaisquer problemas. Quando as cores usadas foram pensadas para não atrapalhar pessoas daltônicas e de baixa visão. Quando as letras são legíveis e etc.
+Um prédio é dito acessível quando possui escadas largas com degraus nivelados, elevadores com portas largas, botões em braille e que indique o andar por feedback sonoro, que tenham rampas, que tenha piso tátil e etc.
+
+\end{frame}
+
+\begin{frame}{Inclusão}
+Algo é dito inclusivo quando todas as pessoas tem igualdade na participação dos movimentos, contextos, ambientes e etc, sem distinções e sem segregação.
+
+Exemplos:
+Uma aula é dita inclusiva quando os professores usam materiais acessíveis, não segregam os alunos, quando as aulas não são oferecidas em turmas separadas para pessoas com deficiência e outra turma para pessoas sem deficiência e etc.
+Uma palestra é dita inclusiva, quando o palestrante ao inícil da mesma se pronuncia sem microfone dando assim a oportunidade de pessoas cegas o localizarem no ambiente, quando o palestrante usa imagens e as descreve para o público, quando o contraste das informações no slide favorecem o entendimento de pessoas daltônicas e com baixa visão, quando o local de acesso é acessível, quando ele o palestrante se preocupa em por textos de forma a facilitar que pessoas surdas acompanhem mesmo que o palestrante não saiba libras.
+\end{frame}
+
+\begin{frame}{Empatia}
+\includemedia[
+  width=0.4\linewidth,
+  totalheight=0.225\linewidth,
+  activate=pageopen,
+  passcontext,  %show VPlayer's right-click menu
+  addresource=empatia.mp4,
+  flashvars={
+    %important: same path as in `addresource'
+    source=empatia.mp4
+  }
+]{\fbox{Click!}}{VPlayer.swf}
+
+\end{frame}
+
+\section{Referências}
+
+% --- O comando \allowframebreaks ---
+% Se o conteúdo não se encaixa em um quadro, a opção allowframebreaks instrui 
+% beamer para quebrá-lo automaticamente entre dois ou mais quadros,
+% mantendo o frametitle do primeiro quadro (dado como argumento) e acrescentando 
+% um número romano ou algo parecido na continuação.
+
+\begin{frame}[allowframebreaks]{Referências}
+\bibliography{abntex2-modelo-references}
+\end{frame}
+
+% ----------------- FIM DO DOCUMENTO -----------------------------------------
+\end{document}
